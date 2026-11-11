@@ -1,0 +1,1 @@
+DA SUA: HTML hien thi logo PNG trong suot cho AutoCAD, SketchUp, 3ds Max 2027, D5 Render, Photoshop. Enscape va V-Ray tam thoi la wordmark cho den khi co logo goc. Mo index.html trong thu muc nay. Khong thay the portfolio cu truoc khi kiem tra.

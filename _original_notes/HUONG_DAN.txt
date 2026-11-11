@@ -1,0 +1,10 @@
+MY KIM PORTFOLIO - BAN DA SUA
+
+1. Giai nen ZIP vao thu muc moi.
+2. Mo index.html de xem Portfolio (khong mo cac file index_new cu).
+3. Nhan EDIT CONTENT, chon + ADD NEW PROJECT.
+4. Tao thu muc moi trong images, vi du project_08, va chep anh vao.
+5. Nhap anh: images/project_08/01.jpg (moi dong mot anh).
+6. Nhan SAVE CHANGES, sau do EXPORT PROJECTS JSON de sao luu.
+7. Dung cung mot trinh duyet de giu thay doi localStorage.
+Luu y: JSON xuat ra KHONG tu dong duoc nap lai khi mo file HTML truc tiep; can dung IMPORT JSON de nap du lieu tren trinh duyet khac.

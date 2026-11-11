@@ -1,0 +1,649 @@
+﻿LƯU Ý (BẢN GITHUB PAGES): Các mục nhắc tới Netlify trong tài liệu này (mục 1 về netlify.toml, mục 12-15) được thay bằng file HUONG_DAN_GITHUB_PAGES.txt đi kèm. Các phần chỉnh sửa nội dung (mục 2-11) giữ nguyên.
+
+================================================================
+  HƯỚNG DẪN SỬ DỤNG WEBSITE PORTFOLIO - MY KIM
+  "Spaces with Purpose."
+================================================================
+
+Tài liệu này hướng dẫn từng bước, bằng tiếng Việt, cách chỉnh sửa
+chữ, thay ảnh, thay đổi bố cục, quản lý dự án và đưa website lên
+Netlify. Bạn KHÔNG cần biết lập trình.
+
+MỤC LỤC
+  1. Trong thư mục có những gì?
+  2. Mở trình chỉnh sửa (Editor)
+  3. Làm quen với giao diện Editor
+  4. Sửa chữ trên trang chủ
+  4A. Ảnh đại diện (Avatar) trong mục About
+  4B. Ba mục chính và cách quản lý từng mục trong Editor
+  5. Quản lý dự án (thêm, sửa, xóa, sắp xếp)
+  6. Quản lý ảnh trong dự án
+  7. Bố cục thư viện ảnh (kích thước, tỉ lệ, cắt ảnh)
+  8. Khối chữ giữa các ảnh (Text blocks)
+  9. Ảnh nền (đầu trang dự án và trang chủ)
+ 10. Màu sắc, phông chữ, kiểu hiển thị
+ 11. Xem trước trên máy tính / máy tính bảng / điện thoại
+ 12. Lưu thay đổi và XUẤT BẢN (rất quan trọng)
+ 13. Đưa website lên Netlify LẦN ĐẦU
+ 14. Cập nhật website các lần sau
+ 15. Form liên hệ (Netlify Forms)
+ 16. Ảnh chất lượng 8K - cần biết
+ 17. Sao lưu
+ 18. Xử lý sự cố thường gặp
+ 19. Chỉnh sửa nâng cao (không bắt buộc)
+
+
+================================================================
+ 1. TRONG THƯ MỤC CÓ NHỮNG GÌ?
+================================================================
+
+Giải nén file MY_KIM_Portfolio_FINAL.zip, bạn sẽ có thư mục
+MY_KIM_Portfolio gồm:
+
+  index.html        Toàn bộ website (giao diện + trình chỉnh sửa).
+  projects.json     DỮ LIỆU của website: dự án, chữ, bố cục, màu sắc...
+                    Đây là file quan trọng nhất, hãy sao lưu thường xuyên.
+  netlify.toml      Cấu hình cho Netlify (không cần sửa).
+  favicon.svg       Biểu tượng nhỏ trên tab trình duyệt.
+  robots.txt        Cho phép công cụ tìm kiếm đọc website.
+  images/           Tất cả hình ảnh:
+     project_01/ ... project_0X/   Ảnh gốc của từng dự án (GIỮ NGUYÊN
+                                   cấu trúc thư mục cũ của bạn).
+     hero.jpeg                     Ảnh hero cũ.
+     skill-icons/                  Biểu tượng phần mềm (AutoCAD, SketchUp...).
+     _med/                         Bản 2560px (WebP) - dùng để hiển thị nhanh.
+     _thumbs/                      Bản nhỏ 900px (WebP) - dùng cho danh sách.
+     backgrounds/, about/          Tự tạo khi bạn tải ảnh nền / ảnh chân dung.
+  _original_notes/  Các ghi chú cũ của bạn (giữ lại để tham khảo).
+  HUONG_DAN_SU_DUNG.txt   Chính là tài liệu này.
+
+NGUYÊN TẮC: Ảnh gốc (độ phân giải cao nhất) luôn được giữ nguyên.
+Website tự dùng bản nhẹ hơn (_med, _thumbs) để tải nhanh, và chỉ tải
+ảnh gốc khi khách bấm phóng to xem chi tiết.
+
+
+================================================================
+ 2. MỞ TRÌNH CHỈNH SỬA (EDITOR)
+================================================================
+
+Nút "Edit content" được ẨN với khách truy cập để website nhìn
+chuyên nghiệp. Chỉ bạn mới mở được:
+
+  Bước 1. Mở website của bạn (hoặc file index.html trong thư mục) bằng
+          trình duyệt Chrome hoặc Edge (khuyến nghị).
+  Bước 2. Thêm  #admin  vào cuối địa chỉ, ví dụ:
+              https://ten-cua-ban.netlify.app/#admin
+          rồi nhấn Enter.
+  Bước 3. Trình chỉnh sửa mở ra. Từ lần sau, nút "Edit content" sẽ
+          hiện trên trình duyệt này của bạn (khách không thấy).
+
+LƯU Ý: Mọi chỉnh sửa chỉ lưu trong TRÌNH DUYỆT của bạn cho đến khi
+bạn xuất bản (xem mục 12). Khách truy cập chưa thấy thay đổi nào
+cho đến khi bạn tải bản cập nhật lên Netlify.
+
+Màn hình nên rộng từ khoảng 1000px trở lên để có chế độ xem trước
+song song. Trên màn hình nhỏ hơn, bảng chỉnh sửa sẽ trượt đè lên
+website.
+
+
+================================================================
+ 3. LÀM QUEN VỚI GIAO DIỆN EDITOR
+================================================================
+
+Bên trái là bảng chỉnh sửa, bên phải là website THẬT - mọi thay đổi
+hiện ngay lập tức (xem trước thời gian thực).
+
+Thanh phía trên bên phải:
+  Desktop / Tablet / Mobile   Xem website ở 3 kích thước màn hình.
+  Undo / Redo                 Hoàn tác / làm lại (phím Ctrl+Z).
+  Download update package     Tải gói cập nhật để xuất bản.
+  Done                        Đóng trình chỉnh sửa.
+
+Bảng bên trái có 6 thẻ (tab):
+  Projects  Danh sách dự án, thông tin, ảnh bìa.
+  Gallery   Bố cục và từng ảnh trong dự án đang mở.
+  Header    Nền (ảnh/màu) đầu trang của dự án.
+  Site      Ảnh hero trang chủ, màu sắc, phông chữ, kiểu danh sách.
+  Text      Toàn bộ chữ trên trang chủ.
+  Content   Giới thiệu bản thân, dịch vụ, liên hệ, xuất bản.
+
+
+================================================================
+ 4. SỬA CHỮ TRÊN TRANG CHỦ
+================================================================
+
+CÁCH 1 - Bấm trực tiếp vào chữ (nhanh nhất):
+  1. Mở Editor. Các chữ có thể sửa sẽ hiện khung nét đứt khi rê chuột.
+  2. Bấm vào chữ cần sửa trên website và gõ trực tiếp.
+  3. Nhấn Enter hoặc bấm ra ngoài để kết thúc.
+  Sửa được: tên logo, dòng giới thiệu nhỏ, các mục menu, nút
+  "Enquire", tiêu đề "Spaces with Purpose.", đoạn mô tả, tiêu đề các
+  mục, nút gửi form và chữ chân trang.
+
+CÁCH 2 - Dùng thẻ "Text":
+  Liệt kê toàn bộ chữ theo từng khu vực (Header, Hero, About,
+  Projects, Expertise, Contact, Footer). Thẻ này còn cho sửa:
+    - Chữ "View project" trên slideshow, chữ "View gallery" trên thẻ dự án.
+    - Tiêu đề hiển thị trên tab trình duyệt.
+  Ngoài ra có:
+    - "Title size": phóng to/thu nhỏ dòng tiêu đề lớn.
+    - "Second line": dòng thứ hai chữ nghiêng (Italic) hoặc thường (Regular).
+  Nút "Reset all texts" đưa toàn bộ chữ về nguyên bản.
+
+Phần About, Dịch vụ, Liên hệ nằm ở thẻ "Content":
+  - About: gõ đoạn văn (để một dòng trống giữa các đoạn để xuống đoạn
+    mới). Có thể tải ảnh chân dung (Upload portrait).
+  - Expertise: mỗi dòng một dịch vụ, theo dạng
+        Tên dịch vụ | Mô tả ngắn
+  - Contact: câu giới thiệu, Email, Điện thoại, Instagram, Behance,
+    LinkedIn (chỉ ô nào có nội dung mới hiển thị trên website).
+
+Các biểu tượng phần mềm (AutoCAD, SketchUp, 3ds Max, D5 Render,
+Enscape, V-Ray, Photoshop) được giữ nguyên.
+
+
+================================================================
+ 4A. ẢNH ĐẠI DIỆN (AVATAR) TRONG MỤC "ABOUT MY KIM"
+================================================================
+
+Bố cục, phông chữ và thứ tự của mục About được giữ NGUYÊN. Ảnh đại
+diện hiện ngay dưới tiêu đề "About My Kim". Khi chưa thêm ảnh, khách
+truy cập không thấy gì thay đổi.
+
+THÊM / THAY ẢNH ĐẠI DIỆN (3 cách)
+  Cách 1. Mở Editor, cuộn tới mục About. Ô nét đứt "+ Add your photo"
+          xuất hiện (chỉ bạn thấy). Bấm vào đó và chọn ảnh.
+  Cách 2. Kéo-thả file ảnh trực tiếp lên khung avatar trên website.
+  Cách 3. Thẻ "Content" > mục "Avatar photo" > bấm "Add photo"
+          (hoặc "Replace photo" nếu đã có ảnh).
+  Muốn gỡ ảnh: bấm "Remove".
+  Khi đã có ảnh, bấm vào avatar trên website sẽ mở nhanh bảng điều khiển
+  Avatar trong thẻ Content.
+
+CHỌN HÌNH DẠNG (Shape / mask)
+  Original   Chữ nhật đứng 4:5 (kiểu gốc).
+  Circle     Hình tròn.
+  Rounded    Chữ nhật bo góc (chỉnh độ bo bằng "Corner radius").
+  Square     Hình vuông.
+  Arch       Cổng vòm (nửa trên bo tròn).
+  Pill       Viên thuốc (bo tròn hoàn toàn).
+  Blob       Hình hữu cơ mềm mại.
+  Hexagon    Lục giác.
+  Custom     Tự do: chọn tỉ lệ (1:1, 4:5, 3:4, 4:3, 16:9) và độ bo
+             góc từ 0% đến 50%.
+
+TINH CHỈNH THÊM
+  Zoom       Phóng to ảnh trong khung (100% - 300%).
+  Size       Chiều rộng avatar từ 160 đến 520 px (trên điện thoại tự
+             thu nhỏ vừa màn hình).
+  Position   Bấm/kéo trên ảnh nhỏ để chọn vùng giữ lại (ví dụ khuôn
+             mặt) khi ảnh bị cắt theo hình dạng.
+Mọi thay đổi hiện ngay lập tức trong chế độ xem trước. Nhớ bấm
+"Download update package" (mục 12) để xuất bản.
+
+Mẹo: chọn ảnh chân dung rõ mặt, tỉ lệ đứng hoặc vuông, tối thiểu
+1200 px bề rộng. Editor vẫn giữ bản gốc chất lượng cao của ảnh.
+
+
+================================================================
+ 4B. BA MỤC CHÍNH VÀ CÁCH QUẢN LÝ TỪNG MỤC TRONG EDITOR
+================================================================
+
+Phần "Selected projects" trên trang chủ chia thành BA mục chính, chuyển
+qua lại bằng ba tab chữ lớn phía trên danh sách dự án:
+  1. Architecture 3D Modeling
+  2. Interior Design
+  3. CAD Drafting & Technical Drawings
+Mỗi tab có phần giới thiệu riêng (tiêu đề, dòng phụ, đoạn mô tả, các
+điểm chính). Bố cục, hiệu ứng, phông chữ và mọi tính năng chỉnh sửa
+trước đây vẫn giữ nguyên.
+
+MENU TRÊN CÙNG
+  Thanh menu phía trên có ba mục ngay cạnh nhau: "Architecture",
+  "Interior Design" và "CAD Drafting". Bấm vào mục nào, website tự
+  cuộn xuống phần dự án và mở đúng tab đó. Tên ngắn trên menu sửa
+  được ở ô "Menu label (top navigation)" (thẻ Content > Main sections
+  hoặc thẻ Projects > Category intro). Trên điện thoại, ba mục nằm
+  trong nút "Menu". Nếu một mục chưa có dự án nào thì khách không
+  thấy mục đó (chỉ bạn thấy khi mở Editor).
+
+MỤC CAD DRAFTING & TECHNICAL DRAWINGS
+  File Layout.pdf (19 trang bản vẽ khổ A3) đã được tách từng trang và
+  xuất ảnh 8K THẬT (rộng 7676 px, vì bản vẽ là dạng vector nên sắc nét
+  ở mọi độ phân giải) rồi chia thành 4 dự án:
+    1. Ground Floor - Living & Dining Layouts   (trang 1-3)
+    2. Kitchen Cabinetry Drawings               (trang 4-11)
+    3. Ground Floor Bedroom - Wall Panel & Wardrobe (trang 12-13)
+    4. First Floor - Living, Master & Kids Rooms    (trang 14-19)
+  Bố cục tự thiết lập: mỗi bản vẽ hiển thị rộng hết hàng để đọc được
+  kích thước, riêng 4 mặt đứng A-D của bếp xếp 2 cột. Thẻ dự án dùng
+  nền trắng và hiện nguyên cả tờ bản vẽ (không bị cắt). Phần "General
+  notes" lấy từ chính ghi chú trong bản vẽ của bạn. Khách bấm vào bản
+  vẽ để phóng to bản gốc 8K và đọc từng con số. Bạn vẫn đổi bố cục,
+  tỉ lệ, thứ tự từng bản vẽ như mọi dự án khác.
+  Khi có thêm bản vẽ mới: thẻ Projects > "+ New project in this
+  category" > thẻ Gallery > "+ Add images" (nên xuất ảnh PNG, bề rộng
+  tối đa 7680 px).
+
+DỰ ÁN KHỞI ĐẦU CỦA MỤC ARCHITECTURE
+  "Pine Forest Villa" (5 ảnh render bạn gửi, giữ nguyên bản gốc
+  2576 px) nằm đầu tiên trong mục Architecture. Tên dự án và dòng
+  tagline là bản tạm do tôi đặt, mô tả lấy từ PDF kiến trúc của bạn -
+  hãy sửa lại cho đúng ý. Dự án "Contemporary Villa" cũ (ảnh nhỏ hơn
+  từ PDF) vẫn còn; nếu trùng nội dung bạn có thể xóa ở thẻ Projects.
+
+DỮ LIỆU CŨ TRONG TRÌNH DUYỆT
+  Nếu trước đây bạn đã chỉnh sửa và trình duyệt lưu bản cũ, website sẽ
+  tự bổ sung các dự án mới được phát hành (không xóa gì của bạn). Nếu
+  vẫn không thấy mục mới, mở thẻ Content > "Reset edits".
+
+THANH CHỌN MỤC Ở ĐẦU EDITOR
+  Ở các thẻ Projects, Gallery và Header có thanh ba nút (kèm số dự án)
+  để chọn mục đang chỉnh. Khi bạn đổi mục, website bên phải cũng đổi
+  theo, danh sách dự án và ô chọn dự án chỉ hiện dự án của mục đó.
+
+THÊM NHANH DỰ ÁN VÀO ĐÚNG MỤC (2 cách)
+  - Trong thẻ Projects, bấm "+ New project in this category".
+  - Khi Editor đang mở, cuối danh sách dự án trên trang chủ có khung nét
+    đứt "+ Add project to ..." - bấm vào để thêm.
+  Dự án mới tự thuộc mục đang mở và mở sẵn thẻ Gallery để thêm ảnh.
+
+SẮP XẾP THỨ TỰ DỰ ÁN TRONG MỘT MỤC
+  Thẻ Projects: kéo-thả hoặc dùng nút mũi tên lên/xuống. Thứ tự này là
+  thứ tự hiển thị của riêng mục đó.
+
+BỐ CỤC CỦA MỘT MỤC ("Category layout")
+  Project view     Site default / Grid (lưới) / List (danh sách).
+  Grid arrangement Editorial (xen kẽ kiểu tạp chí), Two columns (2 cột),
+                   Three columns (3 cột), Single wide (1 cột rộng).
+  Spacing          Khoảng cách giữa các dự án.
+  Reset all card sizes   Đưa kích thước thẻ của mọi dự án trong mục về
+                   tự động (kích thước từng dự án vẫn chỉnh riêng được ở
+                   "Card size").
+
+ẢNH VÀ KHỐI CHỮ TRONG TỪNG DỰ ÁN
+  Cách làm giống nhau cho cả ba mục (xem mục 6, 7, 8): kéo-thả để sắp
+  xếp ảnh, bấm vào ảnh để chỉnh kích thước/tỉ lệ/cắt, và thêm khối chữ
+  (Text blocks) xen giữa các ảnh.
+
+CHUYỂN MỘT DỰ ÁN SANG MỤC KHÁC
+  Thẻ Projects > chọn dự án > "Main section" > chọn mục mới.
+
+SỬA TÊN TAB, TIÊU ĐỀ VÀ GIỚI THIỆU CỦA TỪNG MỤC
+  Thẻ Projects > "Category intro (homepage)" hoặc thẻ Content > "Main
+  sections": Tab name, Heading, Sub-line, Intro text, Key points (mỗi
+  dòng một ý), Closing line. Nút "Up / Down" ở thẻ Content đổi thứ tự
+  các tab (tab đứng đầu là tab mở sẵn).
+
+DÒNG MÔ TẢ NGẮN DƯỚI TIÊU ĐỀ (Tagline)
+  Mỗi dự án có ô "Tagline" (ví dụ "Curved façades & vertical
+  rhythm"), hiện nghiêng dưới tên dự án trong trang chi tiết.
+
+MỤC EXPERTISE (DỊCH VỤ)
+  Có 8 dịch vụ (4 nội thất + 4 kiến trúc từ file PDF). Sửa/xóa/thêm tại
+  Content > Expertise (mỗi dòng một dịch vụ). Bạn có thể thêm dịch vụ
+  CAD tại đây.
+
+ẢNH CỦA MỤC KIẾN TRÚC
+  Nằm trong images/architecture_01_... đến architecture_06_... (giữ
+  nguyên chất lượng gốc). Hai phần "One Model, Different Atmospheres"
+  và "Every Angle Matters" trong PDF được đưa vào dưới dạng khối chữ
+  xen giữa ảnh của dự án tương ứng.
+
+
+================================================================
+ 5. QUẢN LÝ DỰ ÁN
+================================================================
+
+Mở thẻ "Projects".
+
+THÊM DỰ ÁN MỚI
+  1. Bấm "+ New project".
+  2. Điền Title (tên), Category (loại: Residential, Commercial...),
+     Location (địa điểm), Year (năm), Description (mô tả).
+  3. Chuyển sang thẻ "Gallery" và bấm "+ Add images" để thêm ảnh
+     (xem mục 6).
+
+SỬA DỰ ÁN
+  Bấm vào tên dự án trong danh sách, sửa các ô thông tin ở bên dưới.
+  Thay đổi hiện ngay trên website.
+
+SẮP XẾP THỨ TỰ DỰ ÁN
+  - Kéo-thả một dự án lên/xuống trong danh sách, hoặc
+  - Bấm nút mũi tên lên / xuống bên cạnh tên dự án.
+  Thứ tự này là thứ tự hiển thị trên trang chủ.
+
+XÓA DỰ ÁN
+  Chọn dự án rồi bấm "Delete project" và xác nhận.
+  (Các file ảnh vẫn còn trong thư mục images, chỉ dự án bị gỡ khỏi
+  website. Dùng Undo nếu lỡ tay.)
+
+KÍCH THƯỚC THẺ DỰ ÁN TRÊN TRANG CHỦ ("Card size")
+  Auto (xen kẽ tự động), Wide (rộng hết hàng), Half (nửa hàng).
+
+ẢNH ĐẠI DIỆN (THUMBNAIL) VÀ ĐIỂM TIÊU ĐIỂM
+  - Ảnh bìa mặc định là ảnh đầu tiên, hoặc ảnh bạn đặt bằng nút
+    "Cover" (xem mục 6).
+  - Trong ô "Thumbnail - set focal point": bấm hoặc kéo trên ảnh để
+    chọn phần quan trọng nhất. Website sẽ luôn giữ phần đó trong khung
+    khi ảnh bị cắt (có 3 ô xem trước: vuông, rộng, hẹp).
+
+SLIDESHOW TRANG CHỦ ("Homepage slideshow")
+  Chọn "Featured" cho dự án muốn xuất hiện trong slideshow đầu trang.
+  Nếu không chọn dự án nào, website dùng 4 dự án đầu tiên.
+
+
+================================================================
+ 6. QUẢN LÝ ẢNH TRONG DỰ ÁN
+================================================================
+
+Mở thẻ "Gallery" (dự án đang chọn sẽ hiện ra bên phải).
+
+THÊM ẢNH
+  Bấm "+ Add images", chọn một hoặc nhiều ảnh (JPG, PNG hoặc WebP).
+  - Ảnh được GIỮ NGUYÊN chất lượng gốc (tối đa 8K = 7680 px bề rộng).
+  - Website tự tạo thêm 2 bản nhẹ để tải nhanh.
+  - Ảnh mới chỉ nằm trong bộ nhớ trình duyệt cho đến khi bạn bấm
+    "Download update package" (mục 12). ĐỪNG đóng tab trước khi tải.
+
+CHỌN ẢNH ĐỂ CHỈNH
+  Bấm vào một ảnh ngay trên website (viền màu nổi lên) hoặc bấm vào
+  ảnh nhỏ trong danh sách "Images". Bảng điều khiển của ảnh đó hiện ra.
+
+SẮP XẾP THỨ TỰ ẢNH
+  - Kéo-thả ảnh trực tiếp trên website hoặc trong danh sách, hoặc
+  - Bấm "Earlier" / "Later" ở ảnh đang chọn.
+
+NÚT CHO TỪNG ẢNH
+  Cover         Đặt làm ảnh bìa của dự án.
+  Use as header Dùng ảnh này làm nền đầu trang dự án.
+  Remove        Gỡ ảnh khỏi dự án.
+
+THAY MỘT ẢNH BẰNG ẢNH KHÁC
+  Cách an toàn nhất: "+ Add images" để thêm ảnh mới, kéo nó đến đúng
+  vị trí, sau đó chọn ảnh cũ và bấm "Remove".
+  (Đừng chép đè file ảnh trực tiếp trong thư mục vì các bản _med và
+  _thumbs sẽ không được cập nhật theo.)
+
+
+================================================================
+ 7. BỐ CỤC THƯ VIỆN ẢNH
+================================================================
+
+Thẻ "Gallery":
+
+CHỌN BỐ CỤC MẪU ("Layout")
+  Editorial     Xen kẽ ảnh lớn và nhỏ kiểu tạp chí.
+  Grid          Hai cột đều nhau.
+  Large stack   Một cột, ảnh lớn.
+  Mosaic        Ghép mảng nhiều kích thước.
+  Lưu ý: chọn bố cục mẫu sẽ xóa các chỉnh sửa riêng từng ảnh.
+  Hãy chọn bố cục mẫu trước, rồi mới tinh chỉnh từng ảnh.
+
+KHOẢNG CÁCH ("Spacing")  Kéo thanh trượt để tăng/giảm khoảng cách giữa ảnh.
+
+TINH CHỈNH TỪNG ẢNH (bấm chọn ảnh trước)
+  Width / Columns   Chiều rộng ảnh: 1/4, 1/3, 1/2, 2/3, 3/4, Full
+                    hoặc từ 2 đến 12 cột.
+  Aspect ratio      Tỉ lệ khung: Auto (giữ nguyên), 1:1, 4:3, 3:2,
+                    16:9, 21:9, 4:5, 3:4.
+  Zoom              Phóng to ảnh trong khung (100% - 300%).
+  Crop position     Bấm/kéo trên ảnh nhỏ để chọn vùng giữ lại khi cắt.
+Tất cả có thể chỉnh lại BẤT CỨ LÚC NÀO, kể cả sau khi đã thêm ảnh.
+
+Trên máy tính bảng, website tự thu về tối đa 2 ảnh/hàng; trên điện
+thoại là 1 ảnh/hàng. Dùng nút Tablet/Mobile ở thanh trên để kiểm tra.
+
+
+================================================================
+ 8. KHỐI CHỮ GIỮA CÁC ẢNH (TEXT BLOCKS)
+================================================================
+
+Dùng để kể câu chuyện thiết kế: ý tưởng, mặt bằng, vật liệu...
+  1. Thẻ "Gallery", kéo xuống mục "Text blocks".
+  2. Bấm "+ Add text block".
+  3. Nhập Title và Text.
+  4. Chọn "Appears before image" (xuất hiện trước ảnh số mấy,
+     hoặc "End" để đặt cuối cùng).
+  5. Bấm "Remove block" để xóa khối.
+
+
+================================================================
+ 9. ẢNH NỀN
+================================================================
+
+NỀN ĐẦU TRANG CỦA TỪNG DỰ ÁN - thẻ "Header":
+  Background colour   Màu nền (nút "Default" để về mặc định).
+  Background image    Chọn ảnh có sẵn, HOẶC bấm "Upload my own
+                      image" để tải ảnh của riêng bạn.
+  Position            Bấm/kéo trên ảnh để chọn vị trí hiển thị.
+  Size (zoom)         Phóng to ảnh nền.
+  Dark overlay        Độ phủ tối giúp chữ dễ đọc.
+  Aspect ratio        Free, 16:9, 21:9, 3:1, 4:3.
+  Height              Chiều cao khi để "Free" (30% - 100% màn hình).
+
+ẢNH HERO TRANG CHỦ - thẻ "Site":
+  Chọn "Featured slideshow" (trình chiếu các dự án nổi bật) hoặc
+  "Single image" (một ảnh cố định, có đầy đủ tùy chỉnh như trên).
+
+
+================================================================
+ 10. MÀU SẮC, PHÔNG CHỮ, KIỂU HIỂN THỊ
+================================================================
+
+Thẻ "Site", mục "Look & feel":
+  Colour palette   Greige (mặc định), Chalk, Mist, Graphite (tối).
+  Typography       Editorial serif, Classic serif, Modern sans.
+  Accent colour    Màu nhấn.
+  Project list on homepage
+                   Grid (lưới) hoặc List (danh sách, rê chuột hiện
+                   ảnh xem trước). Khách vẫn có thể tự đổi qua lại.
+
+
+================================================================
+ 11. XEM TRƯỚC TRÊN CÁC THIẾT BỊ (CÓ KHUNG iPhone 18 Pro Max)
+================================================================
+
+Ở thanh phía trên của Editor có ba nút:
+  Desktop              Màn hình máy tính (toàn chiều rộng).
+  Tablet               Máy tính bảng, rộng 834 px.
+  iPhone 18 Pro Max    Mô phỏng điện thoại iPhone 18 Pro Max.
+
+CHẾ ĐỘ iPhone 18 Pro Max
+  - Hiển thị website trong khung điện thoại có viền máy, đảo động
+    (Dynamic Island), thanh trạng thái (giờ, sóng, pin) và thanh Home.
+  - Thông số theo trang chính thức của Apple: màn hình 6,9 inch, độ
+    phân giải 2868 x 1320 px (460 ppi). Tương ứng 440 x 956 pt (hệ số
+    3x) - đây là kích thước website thực sự "thấy" trên máy.
+  - Vùng an toàn (safe area) mô phỏng: phía trên 62 pt, phía dưới 34 pt
+    (giá trị gần đúng), nên menu và chữ không bị che bởi đảo động
+    hay thanh Home.
+  - Khung tự thu nhỏ để vừa màn hình máy tính của bạn; dòng chữ nhỏ
+    cạnh nút ghi thông số. Bạn vẫn cuộn, bấm, kéo-thả và chỉnh sửa
+    bên trái như bình thường, kết quả hiện ngay trong khung.
+  - Bấm "Desktop" để quay lại; bấm "Done" để đóng Editor.
+  - Chế độ này cần màn hình máy tính rộng từ khoảng 1000 px. Trên màn
+    hình nhỏ hơn, hãy mở website trực tiếp trên điện thoại để kiểm tra.
+
+CÁC ĐIỂM ĐÃ TINH CHỈNH CHO ĐIỆN THOẠI
+  - Menu: nút "Menu" mở bảng toàn màn hình với ba mục Architecture,
+    Interior Design, CAD Drafting cùng About, Expertise, Enquire.
+  - Ba tab dự án trượt ngang bằng ngón tay, tab đang chọn tự cuộn vào
+    giữa; các thẻ dự án xếp một cột.
+  - Tiêu đề dự án thu nhỏ vừa màn hình; ảnh trong thư viện luôn
+    rộng hết chiều ngang; khối chữ xếp dọc; mục Expertise một cột.
+  - Nút bấm đủ lớn cho ngón tay; ô nhập form 16 px để iPhone không tự
+    phóng to khi gõ.
+  - Phóng to ảnh (lightbox): vuốt ngang để chuyển ảnh.
+Hãy kiểm tra cả ba chế độ trước khi xuất bản.
+
+
+================================================================
+ 12. LƯU THAY ĐỔI VÀ XUẤT BẢN (RẤT QUAN TRỌNG)
+================================================================
+
+Mọi chỉnh sửa tự động lưu trong trình duyệt của bạn. Để khách truy
+cập nhìn thấy, bạn cần xuất bản:
+
+  Bước 1. Trong Editor, bấm "Download update package".
+          Trình duyệt tải về file  portfolio-update.zip.
+  Bước 2. Giải nén portfolio-update.zip.
+  Bước 3. Chép TOÀN BỘ nội dung vừa giải nén vào thư mục
+          MY_KIM_Portfolio, chọn "Replace/Ghi đè" khi được hỏi.
+          (Gói này chứa projects.json mới và các ảnh mới bạn vừa
+           thêm cùng bản _med, _thumbs của chúng.)
+  Bước 4. Tải thư mục MY_KIM_Portfolio lên Netlify (mục 14).
+
+Công cụ phụ trong Editor (thẻ Content, mục Publish):
+  Export JSON   Chỉ tải file projects.json.
+  Import JSON   Nạp lại file projects.json đã sao lưu.
+  Reset edits   Xóa chỉnh sửa trong trình duyệt, quay về dữ liệu
+                trong projects.json.
+
+LƯU Ý QUAN TRỌNG:
+  * Luôn dùng CÙNG MỘT trình duyệt, CÙNG MỘT máy để chỉnh sửa.
+  * Đừng xóa dữ liệu duyệt web (cookie/site data) khi chưa xuất bản.
+  * Sau mỗi lần xuất bản, thư mục MY_KIM_Portfolio của bạn chính là
+    bản mới nhất - hãy giữ làm bản gốc cho lần sau.
+
+
+================================================================
+ 13. ĐƯA WEBSITE LÊN NETLIFY LẦN ĐẦU
+================================================================
+
+  Bước 1. Vào https://www.netlify.com và đăng ký tài khoản miễn phí
+          (có thể dùng Google hoặc GitHub).
+  Bước 2. Sau khi đăng nhập, vào trang https://app.netlify.com/drop
+          (Netlify Drop) HOẶC chọn "Add new site" > "Deploy manually".
+  Bước 3. Kéo cả thư mục MY_KIM_Portfolio (hoặc file .zip) thả vào
+          khung trên trang. Hãy kéo CẢ THƯ MỤC, không kéo từng file.
+  Bước 4. Chờ vài chục giây. Netlify tạo cho bạn một địa chỉ dạng
+          https://ten-ngau-nhien.netlify.app  - website đã chạy.
+  Bước 5. Đổi tên cho đẹp: "Site configuration" (hoặc "Site settings")
+          > "Change site name", ví dụ  mykim-portfolio
+          => https://mykim-portfolio.netlify.app
+  Bước 6. Nếu tạo site bằng Netlify Drop mà chưa đăng nhập, hãy bấm
+          nhận site (claim) vào tài khoản của bạn để không bị mất.
+
+DÙNG TÊN MIỀN RIÊNG (không bắt buộc)
+  "Domain management" > "Add a domain" > làm theo hướng dẫn của
+  Netlify để trỏ tên miền bạn đã mua (ví dụ mykim.com).
+
+Giao diện Netlify thỉnh thoảng thay đổi nhãn nút, nhưng các bước chính
+luôn giống nhau.
+
+
+================================================================
+ 14. CẬP NHẬT WEBSITE CÁC LẦN SAU
+================================================================
+
+  Bước 1. Chỉnh sửa trong Editor (mục 2-11), bấm
+          "Download update package", giải nén và ghi đè vào thư mục
+          MY_KIM_Portfolio (mục 12).
+  Bước 2. Vào https://app.netlify.com, chọn site của bạn.
+  Bước 3. Mở thẻ "Deploys". Kéo thả lại CẢ thư mục MY_KIM_Portfolio
+          vào khung "Drag and drop your site output folder here"
+          ở cuối trang Deploys.
+  Bước 4. Chờ hoàn tất. Địa chỉ website giữ nguyên.
+  Bước 5. Nhấn Ctrl+F5 để xem bản mới (xóa bộ nhớ đệm trình duyệt).
+
+Mỗi lần tải lên, Netlify giữ lại lịch sử. Nếu có lỗi, vào "Deploys",
+chọn bản cũ rồi bấm "Publish deploy" để quay lại.
+
+
+================================================================
+ 15. FORM LIÊN HỆ (NETLIFY FORMS)
+================================================================
+
+Form "Enquire" ở cuối trang chủ hoạt động tự động sau khi website
+được đưa lên Netlify:
+  - Tin nhắn của khách xem tại thẻ "Forms" trong trang quản lý site.
+  - Để nhận email báo tin: "Forms" > "Form notifications" >
+    "Add notification" > "Email notification", nhập email của bạn.
+  - Form đã có chống thư rác (ô ẩn). Gói miễn phí có giới hạn số tin
+    nhắn mỗi tháng - xem trên trang giá của Netlify.
+  - Form KHÔNG gửi được khi mở file trên máy tính; chỉ chạy trên Netlify.
+  - Nếu bạn đổi tên các ô trong form (không khuyến khích), phải
+    tải lại website để Netlify nhận diện form.
+
+
+================================================================
+ 16. ẢNH CHẤT LƯỢNG 8K - CẦN BIẾT
+================================================================
+
+  * Các ảnh hiện có trong dự án có độ phân giải gốc tối đa 1800 px
+    bề rộng. Chúng được giữ NGUYÊN, không phóng to giả tạo (phóng
+    to bằng phần mềm không tạo thêm chi tiết thật, chỉ làm file nặng
+    và mờ). Để có ảnh 8K thật, hãy render lại cảnh 3D ở 7680 px
+    (bề rộng) rồi thêm vào bằng "+ Add images".
+  * Editor nhận ảnh đến 7680 px bề rộng (8K) và giữ nguyên bản gốc
+    để khách phóng to xem chi tiết. Ảnh rộng hơn 8K sẽ tự thu về 8K.
+  * Để website vẫn nhanh: ảnh trong trang dùng bản 2560 px (WebP),
+    danh sách dùng bản 900 px. Chỉ khi khách bấm phóng to mới tải
+    ảnh gốc 8K.
+  * Lời khuyên khi render: xuất JPG chất lượng 90-95% (khoảng 3-10 MB
+    mỗi ảnh 8K) hoặc PNG nếu cần giữ độ trong suốt.
+  * Dung lượng tổng càng lớn thì lần tải lên Netlify càng lâu. Gói
+    miễn phí của Netlify cho phép tổng dung lượng và băng thông rộng
+    rãi cho một portfolio, nhưng hãy xem trang giá hiện hành của
+    Netlify nếu bạn có hàng trăm ảnh 8K.
+
+
+================================================================
+ 17. SAO LƯU
+================================================================
+
+  * Sao chép cả thư mục MY_KIM_Portfolio vào ổ đĩa ngoài hoặc Google
+    Drive sau mỗi lần cập nhật lớn.
+  * File quan trọng nhất: projects.json (toàn bộ nội dung) và thư mục
+    images (toàn bộ ảnh).
+  * Có thể bấm "Export JSON" bất kỳ lúc nào để lưu riêng dữ liệu.
+
+
+================================================================
+ 18. XỬ LÝ SỰ CỐ THƯỜNG GẶP
+================================================================
+
+ - Không thấy nút "Edit content":
+     Thêm  #admin  vào cuối địa chỉ website rồi nhấn Enter.
+ - Đã tải lên Netlify nhưng không thấy thay đổi:
+     Nhấn Ctrl+F5. Kiểm tra bạn đã ghi đè projects.json mới. Nếu
+     bạn đang mở bằng trình duyệt đã chỉnh sửa, hãy thử cửa sổ ẩn
+     danh để xem đúng như khách.
+ - Ảnh mới thêm bị mất khi mở lại:
+     Ảnh mới chỉ lưu tạm. Phải bấm "Download update package" và ghi
+     đè vào thư mục trước khi đóng tab.
+ - Muốn bỏ hết chỉnh sửa chưa xuất bản:
+     Thẻ Content > "Reset edits".
+ - Trang chủ trống / thiếu dự án:
+     Kiểm tra projects.json còn trong thư mục. Dùng "Import JSON" để
+     nạp lại bản sao lưu.
+ - Ảnh hiện chậm hoặc mờ lúc đầu:
+     Ảnh nhỏ tải trước, ảnh lớn tải sau. Nếu bạn tự chép ảnh vào
+     thư mục mà không dùng Editor, các bản _med/_thumbs sẽ thiếu
+     và website dùng ảnh gốc (chậm hơn). Hãy thêm ảnh bằng Editor.
+ - Form liên hệ báo lỗi khi thử trên máy:
+     Bình thường - form chỉ gửi được khi website đã ở trên Netlify.
+ - Giao diện lỗi trên trình duyệt cũ:
+     Dùng bản mới của Chrome, Edge, Safari hoặc Firefox.
+ - Chữ/phông bị đổi lạ:
+     Phông chữ tải từ Google Fonts; khi mất mạng sẽ dùng phông thay thế.
+
+
+================================================================
+ 19. CHỈNH SỬA NÂNG CAO (KHÔNG BẮT BUỘC)
+================================================================
+
+  * projects.json là file văn bản, có thể mở bằng Notepad. Mỗi dự án
+    có: title, category, location, year, description, cover, images,
+    layout, cfg (cài đặt từng ảnh), texts (khối chữ)... Chỉ sửa tay
+    nếu bạn quen thuộc; sai cú pháp (thiếu dấu phẩy, ngoặc) sẽ làm
+    website không đọc được. Hãy sao lưu trước khi sửa.
+  * index.html chứa toàn bộ giao diện và chương trình. Bạn (hoặc
+    người thiết kế web) có thể mở bằng trình soạn thảo mã để chỉnh
+    màu, kích thước mặc định... Hãy sao lưu trước.
+  * Hiện website không cần cài đặt hay "build" gì thêm: sửa xong là
+    tải lên Netlify được ngay.
+
+Chúc bạn có một portfolio thật ấn tượng!
+================================================================

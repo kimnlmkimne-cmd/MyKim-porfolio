@@ -1,0 +1,574 @@
+{
+  "settings": {
+    "hero": "images/hero.jpeg",
+    "heroFocal": [
+      50,
+      50
+    ],
+    "email": "",
+    "seedV": 3
+  },
+  "projects": [
+    {
+      "title": "Commercial Exhibition & Cultural Space",
+      "category": "Commercial",
+      "description": "Selected commercial exhibition and cultural interiors featuring welcoming social spaces, warm material palettes and immersive spatial experiences.",
+      "location": "",
+      "cover": "images/project_01/p01_01.jpg",
+      "images": [
+        "images/project_01/p01_01.jpg",
+        "images/project_01/p01_02.jpg",
+        "images/project_01/p01_03.jpg",
+        "images/project_01/p01_04.jpg",
+        "images/project_01/p01_05.jpg",
+        "images/project_01/p01_06.jpg",
+        "images/project_01/p01_07.jpg",
+        "images/project_01/p01_08.jpg",
+        "images/project_01/p01_09.jpg",
+        "images/project_01/p01_10.jpg",
+        "images/project_01/p01_11.jpg",
+        "images/project_01/p01_12.jpg",
+        "images/project_01/p01_13.jpg",
+        "images/project_01/p01_14.jpg",
+        "images/project_01/p01_15.jpg",
+        "images/project_01/p01_16.jpg",
+        "images/project_01/p01_17.jpg",
+        "images/project_01/p01_18.jpg"
+      ],
+      "id": "commercial-exhibition-cultural-space",
+      "focal": [
+        50,
+        50
+      ],
+      "layout": "editorial",
+      "card": "auto",
+      "bg": "",
+      "bgImage": "",
+      "section": "interior"
+    },
+    {
+      "title": "UAE Villa Interior Design",
+      "category": "Residential",
+      "description": "A refined villa interior exploring elegant finishes, comfortable proportions and contemporary living.",
+      "location": "United Arab Emirates",
+      "cover": "images/project_02/p02_12.jpg",
+      "images": [
+        "images/project_02/p02_01.jpg",
+        "images/project_02/p02_02.jpg",
+        "images/project_02/p02_03.jpg",
+        "images/project_02/p02_04.jpg",
+        "images/project_02/p02_05.jpg",
+        "images/project_02/p02_06.jpg",
+        "images/project_02/p02_07.jpg",
+        "images/project_02/p02_08.jpg",
+        "images/project_02/p02_09.jpg",
+        "images/project_02/p02_10.jpg",
+        "images/project_02/p02_11.jpg",
+        "images/project_02/p02_12.jpg",
+        "images/project_02/p02_13.jpg",
+        "images/project_02/p02_14.jpg",
+        "images/project_02/p02_15.jpg"
+      ],
+      "id": "uae-villa-interior-design",
+      "focal": [
+        50,
+        50
+      ],
+      "layout": "editorial",
+      "card": "auto",
+      "bg": "",
+      "bgImage": "",
+      "section": "interior"
+    },
+    {
+      "title": "Mountain Stone Retreat — Farmhouse",
+      "category": "Residential",
+      "description": "A farmhouse retreat in Turkey with an emphasis on natural textures, architectural character and an inviting atmosphere.",
+      "location": "Turkey",
+      "cover": "images/project_03/p03_03.jpg",
+      "images": [
+        "images/project_03/p03_01.jpg",
+        "images/project_03/p03_02.jpg",
+        "images/project_03/p03_03.jpg",
+        "images/project_03/p03_04.jpg",
+        "images/project_03/p03_05.jpg",
+        "images/project_03/p03_06.jpg",
+        "images/project_03/p03_07.jpg",
+        "images/project_03/p03_08.jpg",
+        "images/project_03/p03_09.jpg"
+      ],
+      "id": "mountain-stone-retreat-farmhouse",
+      "focal": [
+        50,
+        50
+      ],
+      "layout": "editorial",
+      "card": "auto",
+      "bg": "",
+      "bgImage": "",
+      "section": "interior"
+    },
+    {
+      "title": "Vietnamese Mid-Century Penthouse",
+      "category": "Residential",
+      "description": "A residential interior study balancing contemporary comfort with warm, mid-century inspired detailing.",
+      "location": "Vietnam",
+      "cover": "images/project_04/p04_04.jpg",
+      "images": [
+        "images/project_04/p04_01.jpg",
+        "images/project_04/p04_02.jpg",
+        "images/project_04/p04_03.jpg",
+        "images/project_04/p04_04.jpg",
+        "images/project_04/p04_05.jpg",
+        "images/project_04/p04_06.jpg",
+        "images/project_04/p04_07.jpg",
+        "images/project_04/p04_08.jpg",
+        "images/project_04/p04_09.jpg"
+      ],
+      "id": "vietnamese-mid-century-penthouse",
+      "focal": [
+        50,
+        50
+      ],
+      "layout": "editorial",
+      "card": "auto",
+      "bg": "",
+      "bgImage": "",
+      "section": "interior"
+    },
+    {
+      "title": "Modern Vietnamese Townhouse",
+      "category": "Residential",
+      "description": "Thoughtful residential design with coordinated materials, functional planning and comfortable everyday spaces.",
+      "location": "Vietnam",
+      "cover": "images/project_05/p05_02.jpg",
+      "images": [
+        "images/project_05/p05_01.jpg",
+        "images/project_05/p05_02.jpg",
+        "images/project_05/p05_03.jpg",
+        "images/project_05/p05_04.jpg",
+        "images/project_05/p05_05.jpg",
+        "images/project_05/p05_06.jpg",
+        "images/project_05/p05_07.jpg",
+        "images/project_05/p05_08.jpg"
+      ],
+      "id": "modern-vietnamese-townhouse",
+      "focal": [
+        50,
+        50
+      ],
+      "layout": "editorial",
+      "card": "auto",
+      "bg": "",
+      "bgImage": "",
+      "section": "interior"
+    },
+    {
+      "title": "MaisonA Apartment",
+      "category": "Residential",
+      "description": "MaisonA, Vietnam — a warm contemporary apartment with bespoke cabinetry, integrated storage and carefully layered lighting.",
+      "location": "Vietnam",
+      "cover": "images/project_06/p06_02.jpg",
+      "images": [
+        "images/project_06/p06_01.jpg",
+        "images/project_06/p06_02.jpg",
+        "images/project_06/p06_03.jpg",
+        "images/project_06/p06_04.jpg",
+        "images/project_06/p06_05.jpg",
+        "images/project_06/p06_06.jpg",
+        "images/project_06/p06_07.jpg",
+        "images/project_06/p06_08.jpg",
+        "images/project_06/p06_09.jpg",
+        "images/project_06/p06_10.jpg",
+        "images/project_06/p06_11.jpg",
+        "images/project_06/p06_12.jpg"
+      ],
+      "id": "maisona-apartment",
+      "focal": [
+        50,
+        50
+      ],
+      "layout": "editorial",
+      "card": "auto",
+      "bg": "",
+      "bgImage": "",
+      "section": "interior"
+    },
+    {
+      "title": "Upper Serangoon — 3 Bedroom Apartment",
+      "category": "Residential",
+      "description": "Upper Serangoon, Singapore — a three-bedroom home designed around practical storage, flexible living and understated natural materials.",
+      "location": "Singapore",
+      "cover": "images/project_07_upper_serangoon/p07_02.jpg",
+      "images": [
+        "images/project_07_upper_serangoon/p07_01.jpg",
+        "images/project_07_upper_serangoon/p07_02.jpg",
+        "images/project_07_upper_serangoon/p07_03.jpg",
+        "images/project_07_upper_serangoon/p07_04.jpg",
+        "images/project_07_upper_serangoon/p07_05.jpg",
+        "images/project_07_upper_serangoon/p07_06.jpg"
+      ],
+      "id": "upper-serangoon-3-bedroom-apartment",
+      "focal": [
+        50,
+        50
+      ],
+      "layout": "editorial",
+      "card": "auto",
+      "bg": "",
+      "bgImage": "",
+      "section": "interior"
+    },
+    {
+      "id": "pine-forest-villa",
+      "title": "Pine Forest Villa",
+      "tagline": "Concrete, timber and glass among the pines",
+      "category": "Residential",
+      "location": "",
+      "year": "2026",
+      "description": "Strong horizontal planes, generous glazing, and timber accents define this residential model. Multiple lighting conditions reveal the façade composition and exterior material character.",
+      "cover": "images/architecture_00_pine_forest_villa/01.jpg",
+      "images": [
+        "images/architecture_00_pine_forest_villa/01.jpg",
+        "images/architecture_00_pine_forest_villa/02.jpg",
+        "images/architecture_00_pine_forest_villa/03.jpg",
+        "images/architecture_00_pine_forest_villa/04.jpg",
+        "images/architecture_00_pine_forest_villa/05.jpg"
+      ],
+      "section": "architecture",
+      "focal": [
+        50,
+        50
+      ],
+      "layout": "editorial",
+      "card": "auto",
+      "bg": "",
+      "bgImage": "",
+      "texts": [
+        {
+          "t": "One Model, Different Atmospheres",
+          "x": "Daylight and evening conditions offer complementary ways to communicate architecture.",
+          "at": 3
+        }
+      ],
+      "cfg": {}
+    },
+    {
+      "id": "high-rise-architecture",
+      "title": "High-Rise Architecture",
+      "tagline": "Curved façades & vertical rhythm",
+      "category": "High-rise",
+      "location": "",
+      "year": "2026",
+      "description": "A study of layered tower geometry, continuous horizontal bands, and a sculptural podium. The visual presentation emphasizes the relationship between building massing and its urban setting.",
+      "cover": "images/architecture_01_high_rise/01.jpg",
+      "images": [
+        "images/architecture_01_high_rise/01.jpg",
+        "images/architecture_01_high_rise/02.jpg",
+        "images/architecture_01_high_rise/03.jpg"
+      ],
+      "section": "architecture",
+      "focal": [
+        50,
+        50
+      ],
+      "layout": "editorial",
+      "card": "auto",
+      "bg": "",
+      "bgImage": "",
+      "texts": []
+    },
+    {
+      "id": "contemporary-villa",
+      "title": "Contemporary Villa",
+      "tagline": "Materiality across daylight and dusk",
+      "category": "Residential",
+      "location": "",
+      "year": "2026",
+      "description": "Strong horizontal planes, generous glazing, and timber accents define this residential model. Multiple lighting conditions reveal the façade composition and exterior material character.",
+      "cover": "images/architecture_02_contemporary_villa/01.jpg",
+      "images": [
+        "images/architecture_02_contemporary_villa/01.jpg",
+        "images/architecture_02_contemporary_villa/02.jpg",
+        "images/architecture_02_contemporary_villa/03.jpg",
+        "images/architecture_02_contemporary_villa/04.jpg",
+        "images/architecture_02_contemporary_villa/05.jpg"
+      ],
+      "section": "architecture",
+      "focal": [
+        50,
+        50
+      ],
+      "layout": "editorial",
+      "card": "auto",
+      "bg": "",
+      "bgImage": "",
+      "texts": [
+        {
+          "t": "One Model, Different Atmospheres",
+          "x": "Daylight and evening conditions offer complementary ways to communicate architecture.",
+          "at": 3
+        }
+      ]
+    },
+    {
+      "id": "farmhouse-residence",
+      "title": "Farmhouse Residence",
+      "tagline": "Traditional forms, detailed expression",
+      "category": "Residential",
+      "location": "",
+      "year": "2026",
+      "description": "Pitched roofs, timber porches, masonry textures, and landscaped surroundings are brought together in a cohesive residential visualization.",
+      "cover": "images/architecture_03_farmhouse_residence/01.jpg",
+      "images": [
+        "images/architecture_03_farmhouse_residence/01.jpg",
+        "images/architecture_03_farmhouse_residence/02.jpg",
+        "images/architecture_03_farmhouse_residence/03.jpg"
+      ],
+      "section": "architecture",
+      "focal": [
+        50,
+        50
+      ],
+      "layout": "editorial",
+      "card": "auto",
+      "bg": "",
+      "bgImage": "",
+      "texts": []
+    },
+    {
+      "id": "commercial-architecture",
+      "title": "Commercial Architecture",
+      "tagline": "Modular façades & repeated elements",
+      "category": "Commercial",
+      "location": "",
+      "year": "2026",
+      "description": "A multi-level architectural composition exploring façade repetition, glazed ground-floor frontage, and clear relationships between connected building volumes.",
+      "cover": "images/architecture_04_commercial_architecture/01.jpg",
+      "images": [
+        "images/architecture_04_commercial_architecture/01.jpg",
+        "images/architecture_04_commercial_architecture/02.jpg"
+      ],
+      "section": "architecture",
+      "focal": [
+        50,
+        50
+      ],
+      "layout": "editorial",
+      "card": "auto",
+      "bg": "",
+      "bgImage": "",
+      "texts": []
+    },
+    {
+      "id": "traditional-residential-model",
+      "title": "Traditional Residential Model",
+      "tagline": "Geometry before photorealism",
+      "category": "Residential",
+      "location": "",
+      "year": "2026",
+      "description": "Multiple unrendered model views reveal roof intersections, openings, garage volumes, and exterior detailing—keeping the underlying 3D geometry visible.",
+      "cover": "images/architecture_05_traditional_residential_model/01.jpg",
+      "images": [
+        "images/architecture_05_traditional_residential_model/01.jpg",
+        "images/architecture_05_traditional_residential_model/02.jpg",
+        "images/architecture_05_traditional_residential_model/03.jpg",
+        "images/architecture_05_traditional_residential_model/04.jpg",
+        "images/architecture_05_traditional_residential_model/05.jpg"
+      ],
+      "section": "architecture",
+      "focal": [
+        50,
+        50
+      ],
+      "layout": "editorial",
+      "card": "auto",
+      "bg": "",
+      "bgImage": "",
+      "texts": [
+        {
+          "t": "Every Angle Matters",
+          "x": "Multiple perspectives help communicate the integrity of roof geometry and architectural form.",
+          "at": 3
+        }
+      ]
+    },
+    {
+      "id": "contemporary-townhouse",
+      "title": "Contemporary Townhouse",
+      "tagline": "Compact urban verticality",
+      "category": "Residential",
+      "location": "",
+      "year": "2026",
+      "description": "A narrow multi-storey building featuring expansive glazed façades, projecting balconies, metal railings, and an open rooftop terrace.",
+      "cover": "images/architecture_06_contemporary_townhouse/01.jpg",
+      "images": [
+        "images/architecture_06_contemporary_townhouse/01.jpg",
+        "images/architecture_06_contemporary_townhouse/02.jpg"
+      ],
+      "section": "architecture",
+      "focal": [
+        50,
+        50
+      ],
+      "layout": "editorial",
+      "card": "auto",
+      "bg": "",
+      "bgImage": "",
+      "texts": []
+    },
+    {
+      "id": "ground-floor-living-dining-layouts",
+      "title": "Ground Floor — Living & Dining Layouts",
+      "tagline": "Floor plan, wall cabinet and panelling drawings",
+      "category": "Floor plans",
+      "location": "",
+      "year": "",
+      "description": "Ground floor plan with the living room wall cabinet layout and the dining room wall panel drawings, including dimensions, materials and installation notes.",
+      "cover": "images/cad_01_ground_floor_living_dining/01.png",
+      "images": [
+        "images/cad_01_ground_floor_living_dining/01.png",
+        "images/cad_01_ground_floor_living_dining/02.png",
+        "images/cad_01_ground_floor_living_dining/03.png"
+      ],
+      "section": "cad",
+      "focal": [
+        50,
+        50
+      ],
+      "layout": "stack",
+      "card": "auto",
+      "bg": "",
+      "bgImage": "",
+      "texts": [
+        {
+          "t": "General notes",
+          "x": "Please double-check the actual room dimensions before proceeding with the installation.\nColor customization is available for all materials.",
+          "at": 0
+        }
+      ],
+      "cfg": {}
+    },
+    {
+      "id": "kitchen-cabinetry-drawings",
+      "title": "Kitchen Cabinetry Drawings",
+      "tagline": "Layout, shelf frames and elevations A–D",
+      "category": "Kitchen cabinetry",
+      "location": "",
+      "year": "",
+      "description": "Complete kitchen cabinet set: layout, fridge and tall units, bottom and top shelf frames, and four elevations shown with and without doors.",
+      "cover": "images/cad_02_kitchen_cabinetry/01.png",
+      "images": [
+        "images/cad_02_kitchen_cabinetry/01.png",
+        "images/cad_02_kitchen_cabinetry/02.png",
+        "images/cad_02_kitchen_cabinetry/03.png",
+        "images/cad_02_kitchen_cabinetry/04.png",
+        "images/cad_02_kitchen_cabinetry/05.png",
+        "images/cad_02_kitchen_cabinetry/06.png",
+        "images/cad_02_kitchen_cabinetry/07.png",
+        "images/cad_02_kitchen_cabinetry/08.png"
+      ],
+      "section": "cad",
+      "focal": [
+        50,
+        50
+      ],
+      "layout": "stack",
+      "card": "auto",
+      "bg": "",
+      "bgImage": "",
+      "texts": [
+        {
+          "t": "General notes",
+          "x": "Please double-check the actual room dimensions before proceeding with the installation.\nColor customization is available for all materials.\nCabinet door sizes vary depending on their location and the size of the kitchen appliances. The primary color is ivory white.\nFor tall unit cabinets, you can refer to IKEA spice cabinet dimensions. The pull-out slides can also be customized in terms of size and number of compartments.",
+          "at": 0
+        },
+        {
+          "t": "Elevations A–D",
+          "x": "Each elevation is shown with doors and without doors.",
+          "at": 4
+        }
+      ],
+      "cfg": {
+        "images/cad_02_kitchen_cabinetry/05.png": {
+          "sp": 6
+        },
+        "images/cad_02_kitchen_cabinetry/06.png": {
+          "sp": 6
+        },
+        "images/cad_02_kitchen_cabinetry/07.png": {
+          "sp": 6
+        },
+        "images/cad_02_kitchen_cabinetry/08.png": {
+          "sp": 6
+        }
+      }
+    },
+    {
+      "id": "ground-floor-bedroom-wall-panel-wardrobe",
+      "title": "Ground Floor Bedroom — Wall Panel & Wardrobe",
+      "tagline": "Panel layout, wardrobe elevations and section",
+      "category": "Bedroom joinery",
+      "location": "",
+      "year": "",
+      "description": "Wall panel layout and wardrobe drawings for the ground floor bedroom: elevations with and without doors, plus a section.",
+      "cover": "images/cad_03_bedroom_wall_panel_wardrobe/01.png",
+      "images": [
+        "images/cad_03_bedroom_wall_panel_wardrobe/01.png",
+        "images/cad_03_bedroom_wall_panel_wardrobe/02.png"
+      ],
+      "section": "cad",
+      "focal": [
+        50,
+        50
+      ],
+      "layout": "stack",
+      "card": "auto",
+      "bg": "",
+      "bgImage": "",
+      "texts": [
+        {
+          "t": "General notes",
+          "x": "Please double-check the actual room dimensions before proceeding with the installation.\nColor customization is available for all materials.",
+          "at": 0
+        }
+      ],
+      "cfg": {}
+    },
+    {
+      "id": "first-floor-living-master-kids-rooms",
+      "title": "First Floor — Living, Master & Kids Rooms",
+      "tagline": "Plan, wall cabinet, wall panels and built-in furniture",
+      "category": "Floor plans",
+      "location": "",
+      "year": "",
+      "description": "First floor plan with the informal living room wall cabinet, master bedroom wall panel and dressing table, and the kids room wall panel, wardrobe and study table.",
+      "cover": "images/cad_04_first_floor_rooms/01.png",
+      "images": [
+        "images/cad_04_first_floor_rooms/01.png",
+        "images/cad_04_first_floor_rooms/02.png",
+        "images/cad_04_first_floor_rooms/03.png",
+        "images/cad_04_first_floor_rooms/04.png",
+        "images/cad_04_first_floor_rooms/05.png",
+        "images/cad_04_first_floor_rooms/06.png"
+      ],
+      "section": "cad",
+      "focal": [
+        50,
+        50
+      ],
+      "layout": "stack",
+      "card": "auto",
+      "bg": "",
+      "bgImage": "",
+      "texts": [
+        {
+          "t": "General notes",
+          "x": "Please double-check the actual room dimensions before proceeding with the installation.\nColor customization is available for all materials.",
+          "at": 0
+        }
+      ],
+      "cfg": {}
+    }
+  ]
+}
